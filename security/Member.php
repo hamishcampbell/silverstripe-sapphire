@@ -1405,6 +1405,7 @@ class Member extends DataObject {
 				$config = HtmlEditorConfig::get($group->HtmlEditorConfig);
 				if($config && $config->getOption('priority') > $currentPriority) {
 					$currentName = $configName;
+					$currentPriority = $config->getOption('priority');
 				}
 			}
 		}
